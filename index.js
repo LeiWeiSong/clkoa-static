@@ -47,7 +47,6 @@ function serve (root, opts) {
 
   if (!opts.defer) {
     return async function serve (ctx, next) {
-      console.log(ctx,'ctx',opts,'opts');
       let done = false
 
       if (ctx.method === 'HEAD' || ctx.method === 'GET') {

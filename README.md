@@ -36,9 +36,9 @@ const app = new Koa();
 const static = require('clkoa-static');
 const path = require('path');
 // facility代表设备类型，不设置则代表不区分
-app.use(static(path.join(__dirname + '/public'),{facility:'pc'})); // 当设备为电脑端时(Personal Computer)获取端静态资源
+app.use(static(path.join(__dirname + '/public/pc'),{facility:'pc'})); // 当设备为电脑端时(Personal Computer)获取端静态资源
 
-app.use(static(path.join(__dirname + '/public'),{facility:'md'})); // 当设备为手机端时(Mobile Device)获取端静态资源
+app.use(static(path.join(__dirname + '/public/app'),{facility:'md'})); // 当设备为手机端时(Mobile Device)获取端静态资源
 
 ```
 ## 示例2 defer

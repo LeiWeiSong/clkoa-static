@@ -5,7 +5,7 @@
     "type": "git",
     "url": "https://github.com/LeiWeiSong/clkoa-static.git"
   },
-  "version": "5.0.0",
+  "version": "1.0.0",
   "keywords": [
     "koa",
     "middleware",
